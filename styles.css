@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color : #21A5D5;
+    --small-text : 0.8rem;
+}
+
+body{
+    font-family:sans-serif   ;
+    
+}
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 333;
+}
+
+.nav-main{
+    position: sticky;
+    top: 3.17rem;
+    z-index: 3335;
+    background-color: white;
+}
+
+header{
+    background-color: var(--main-color);
+    padding: 1rem;
+
+}
+.header-content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav,.hero{
+    width: 70%;
+    margin: auto;
+}
+
+.hero-image{
+    background-image:url('https://masterbookbuilders.com/wp-content/uploads/2023/05/NetworkDots2.gif');
+    background-position: center center;
+    padding: 2rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.title h2{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.demo{
+    padding: 0.7rem 2rem;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+
+.title,.image{
+    width: 50%;
+}
+
+.mail,.location{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.h-left{
+    display: flex;
+    gap: 1rem;
+}
+
+.h-left p{
+    color: white;
+}
+
+.h-right{
+    display: flex;
+    gap: 1rem;
+}
+.h-right i{
+    color: #6EC1E4;
+    cursor: url('./broom.png'), auto;
+}
+
+.h-right i:hover{
+    color: rgb(10, 192, 10);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+}
+
+.menu-items{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+
+.contact button{
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    font-weight: bolder;
+    border-radius: 40px;
+}
+
+.bi-list{
+    font-size: 2rem;
+    display: none;
+}
+
+.solutions{
+    background-color: var(--main-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.s-images{
+    display: flex;
+    width: 60%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+
+@media (max-width:1410px){
+    nav,.header-content{
+        width: 80%;
+    }
+}
+
+@media (max-width:1250px) {
+    .title h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width:1230px){
+    nav,.header-content,.hero{
+        width: 95%;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .bi-list{
+        display: block;
+    }
+}
+
+
+@media (max-width:830px){
+    .title h2{
+        font-size: 1.5rem;
+    }
+    .s-images{
+        width: 90%;
+        
+    }
+}
+
+@media (max-width:665px){
+    .hero{
+        flex-direction: column;
+        margin: 2rem auto;
+
+    }
+    .title,.image{
+        width: 80%;
+    }
+
+    .title{
+        
+        text-align: center;
+    }
+}
+
+@media (max-width:640px){
+    .h-left{
+        display: none;
+    }
+
+    .header-content{
+        margin: 0 !important;
+    }
+}
+@media (max-width:540px){
+    .s-images{
+        overflow-x: scroll;
+    }
+}
+@media (max-width:430px){
+    
+    
+
+    .contact{
+        display: none;
+    }
+}
